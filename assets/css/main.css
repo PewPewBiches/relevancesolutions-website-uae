@@ -3396,3 +3396,44 @@ p {
 #logo img {
     height: 80px;
 }
+
+/* ===== NAV BAR WHITE ===== */
+
+#nav {
+    background: #ffffff !important;
+    background-image: none !important;
+}
+
+/* nav text darker for contrast */
+#nav > ul > li a {
+    color: #333333 !important;
+}
+
+#nav > ul > li:hover a,
+#nav > ul > li.current a,
+#nav > ul > li.active a {
+    color: #000000 !important;
+}
+
+/* optional: make the blue strip subtle */
+#nav:after {
+    background-color: #37c0fb !important;
+}
+
+
+/* ===== BANNER STRIP WHITE ===== */
+
+#banner header {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
+/* banner text */
+#banner header h2 {
+    color: #333333 !important;
+}
+
+#nav:after {
+    background-color: #000000 !important;
+}
