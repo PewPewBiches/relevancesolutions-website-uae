@@ -2530,14 +2530,11 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		text-align: center;
-		padding: 3em 0 0 0;
-		background-color: #fff;
-		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
-		background-position: top left,					top left,					top left;
-		background-size: 100% 6em,					100% 6em,					auto;
-		background-repeat: no-repeat,					no-repeat,					repeat;
-	}
+    text-align: center;
+    padding: 2em 0 0 0;
+    background-color: #000;
+    background-image: none;
+}
 
 		#header h1 {
 			padding: 0 0 2.75em 0;
@@ -3472,4 +3469,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
     font-weight: 400;
+}
+/* Remove Arcana blue nav diamond */
+#nav > ul > li.current:after {
+    display: none !important;
 }
