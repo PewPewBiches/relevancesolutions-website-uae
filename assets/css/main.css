@@ -3437,3 +3437,33 @@ p {
 #nav:after {
     background-color: #000000 !important;
 }
+
+/* ===== FORCE DARK TEXT ON WHITE AREAS ===== */
+
+/* nav menu text */
+#nav > ul > li a {
+    color: #222 !important;
+    font-weight: 500;
+}
+
+/* nav hover/active */
+#nav > ul > li:hover a,
+#nav > ul > li.current a,
+#nav > ul > li.active a {
+    color: #000 !important;
+}
+
+/* banner strip text (Arcana line area) */
+#banner header {
+    color: #222 !important;
+}
+
+/* banner heading */
+#banner header h2 {
+    color: #111 !important;
+}
+
+/* general headings across site */
+h1, h2, h3, h4, h5, h6 {
+    color: #111 !important;
+}
