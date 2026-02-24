@@ -3467,3 +3467,9 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #111 !important;
 }
+
+.highlight-text {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-weight: 400;
+}
