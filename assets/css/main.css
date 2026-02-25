@@ -3511,3 +3511,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+/* ===== CUSTOM HERO (OVERRIDE ARCANA) ===== */
+
+.hero {
+  height: 100vh;
+  background: #ffffff !important; /* force white */
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 300;
+  line-height: 1.1;
+  max-width: 900px;
+  color: #111;
+}
