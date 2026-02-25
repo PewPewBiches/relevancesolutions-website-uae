@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Relevance Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relevance Solutions | UAE Finance & VAT Support</title>
 
-  <!-- Montserrat Light -->
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
   <style>
-    @font-face {
-      font-family: 'MontserratCustom';
-      src: url('assets/Montserrat-Light.ttf') format('truetype');
-      font-weight: 300;
-      font-style: normal;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -21,128 +16,200 @@
     }
 
     body {
-      font-family: 'MontserratCustom', Arial, sans-serif;
-      background: #ffffff;
+      font-family: 'Inter', sans-serif;
       color: #111;
+      background: #fff;
+      line-height: 1.5;
     }
 
-    /* NAV */
-    .nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 24px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-    }
-
-    .nav-links a {
-      margin-left: 32px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 400;
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 24px;
     }
 
     /* HERO */
+
     .hero {
-      height: 100vh;
-      background: #000;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
       align-items: center;
-      padding: 0 8%;
-      color: white;
     }
 
-    .hero h1 {
-      font-size: clamp(48px, 7vw, 96px);
-      font-weight: 300;
-      line-height: 1.1;
-      max-width: 900px;
+    .logo-big {
+      font-size: 72px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .about-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .contact {
+      font-size: 15px;
+      color: #666;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 8px;
     }
 
     /* SERVICES */
-    .services {
-      padding: 120px 8%;
-      background: #fff;
+
+    .services-title {
+      font-size: 120px;
+      font-weight: 800;
+      margin: 120px 0 40px;
+      line-height: 0.9;
     }
 
-    .services h2 {
-      font-size: 48px;
-      font-weight: 300;
-      margin-bottom: 60px;
-    }
-
-    .service-grid {
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
 
     .service-card {
-      padding: 32px;
-      border: 1px solid #eee;
-      border-radius: 16px;
-      transition: all 0.25s ease;
+      border: 1px solid #e5e5e5;
+      padding: 24px;
+      border-radius: 8px;
     }
 
-    .service-card:hover {
-      transform: translateY(-6px);
-      border-color: #ccc;
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* CTA */
+
+    .cta {
+      margin: 140px 0;
+    }
+
+    .cta h2 {
+      font-size: 56px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      max-width: 800px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border: 1px solid #111;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #111;
+      color: white;
+    }
+
+    /* BIG LOGO BLOCK */
+
+    .big-brand {
+      background: #000;
+      color: white;
+      padding: 160px 24px;
+      text-align: center;
+      font-size: 120px;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-title {
+        font-size: 64px;
+      }
+
+      .cta h2 {
+        font-size: 36px;
+      }
+
+      .big-brand {
+        font-size: 56px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <div class="nav">
-    <div class="logo">
-  <img src="images/logo.png" alt="Relevance Solutions">
-</div>
+  <div class="container">
 
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="logo-big">Relevance Solutions</div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>
-      Strategic Finance & VAT Solutions for UAE Businesses
-    </h1>
-  </section>
+        <p class="about-text">
+          Relevance Solutions provides end-to-end accounting, VAT compliance, and financial reporting support for UAE startups and SMEs — helping businesses stay compliant, audit-ready, and financially clear.
+        </p>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Our Services</h2>
+        <div class="contact">
+          sc@relevancesolutions.ae<br/>
+          <!-- ADD UAE PHONE HERE -->
+        </div>
+      </div>
 
-    <div class="service-grid">
+      <img src="dubai.jpg" alt="Dubai Skyline"/>
+    </section>
+
+    <!-- SERVICES -->
+    <h2 class="services-title">Our Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Daily accounting operations ensuring accuracy, compliance, and audit-ready records.</p>
+      </div>
 
       <div class="service-card">
         <h3>VAT Compliance</h3>
-        <p>End-to-end VAT filing and compliance for UAE businesses.</p>
+        <p>VAT accounting, filing, and ongoing regulatory support to help avoid FTA penalties.</p>
       </div>
 
       <div class="service-card">
-        <h3>Bookkeeping</h3>
-        <p>Clean, structured financial records that scale with you.</p>
+        <h3>MIS & Financial Reporting</h3>
+        <p>Structured financial reporting to support better decisions and banking readiness.</p>
       </div>
-
-      <div class="service-card">
-        <h3>Financial Reporting</h3>
-        <p>Decision-ready reports for founders and management.</p>
-      </div>
-
     </div>
-  </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Let’s explore how we can help you achieve your goals.</h2>
+      <a href="mailto:sc@relevancesolutions.ae" class="btn">Get in touch</a>
+    </section>
+
+  </div>
+
+  <!-- BIG BRAND -->
+  <div class="big-brand">
+    RELEVANCE SOLUTIONS
+  </div>
 
 </body>
 </html>
-
