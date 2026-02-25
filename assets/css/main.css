@@ -3356,33 +3356,6 @@ input, select, textarea {
 
 	}
 
-/* ===== RELEVANCE DARK THEME OVERRIDE ===== */
-
-/* Page background */
-body {
-    background: #000000 !important;
-    color: #ffffff !important;
-}
-
-/* Header (top white area) */
-#header {
-    background-color: #000000 !important;
-    background-image: none !important;
-}
-
-/* Section backgrounds */
-.wrapper.style1,
-.wrapper.style2 {
-    background: #000000 !important;
-    color: #ffffff !important;
-}
-
-/* Footer */
-#footer {
-    background: #000000 !important;
-    color: #ffffff !important;
-}
-
 /* Fix headings visibility */
 h1, h2, h3, h4, h5, h6,
 p {
@@ -3391,7 +3364,7 @@ p {
 
 /* Optional: slightly bigger logo control */
 #logo img {
-    height: 80px;
+    height: 32px;
 }
 
 /* ===== NAV BAR WHITE ===== */
@@ -3527,4 +3500,23 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   max-width: 900px;
   color: #111;
+}
+/* ===== CLEAN LIGHT THEME ===== */
+
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+#header {
+  background: #ffffff;
+}
+
+.wrapper.style1,
+.wrapper.style2 {
+  background: #ffffff;
+}
+
+#footer {
+  background: #ffffff;
 }
