@@ -162,21 +162,30 @@
   height: auto;
   display: block;
 }
+    /* TOP LEFT LOGO */
+.top-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 1000;
+}
+
+.top-logo img {
+  width: 260px;
+  height: auto;
+  display: block;
+}
   </style>
 </head>
 
 <body>
-
+<div class="top-logo">
+  <img src="logo.png" alt="Relevance Solutions Logo">
+</div>
   <div class="container">
 
     <!-- HERO -->
-    <section class="hero">
-      <div>
-        <div class="logo-wrap">
-  <img src="logo.png" alt="Relevance Solutions Logo" class="logo-img">
-</div>
-
-        <p class="about-text">
+           <p class="about-text">
           Relevance Solutions provides end-to-end accounting, VAT compliance, and financial reporting support for UAE startups and SMEs — helping businesses stay compliant, audit-ready, and financially clear.
         </p>
 
@@ -224,5 +233,6 @@
 
 </body>
 </html>
+
 
 
