@@ -18,6 +18,14 @@ body {
   color: white;
   line-height: 1.6;
 }
+  .btn-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+}
 
 /* HERO */
 .hero {
@@ -138,6 +146,10 @@ body {
   <a href="mailto:rc@relevancesolutions.ae" class="btn btn-primary">
     Contact Us
   </a>
+  
+  <a href="https://wa.me/message/MYM7RUCGEZI3B1" class="btn btn-whatsapp" target="_blank">
+  WhatsApp Us
+</a>
 
   <a href="https://relevancesolutions.in" class="btn btn-outline">
     Visit India Website
@@ -180,6 +192,37 @@ body {
 <div class="footer">
   © 2026 Relevance Solutions | UAE
 </div>
+ <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/message/MYM7RUCGEZI3B1"
+   target="_blank"
+   class="whatsapp-float">
+   💬
+</a>
 
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: white;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  background: #1ebe5d;
+}
+</style>
 </body>
 </html>
